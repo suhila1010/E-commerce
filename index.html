@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> E-commerce Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/w4.png">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="slide-left">
+            <div class="menu">
+                <a href="" class="logo">INTERNET</a>
+                <ul>
+                    <li>
+                        <a href="#">MEN</a>
+                    </li>
+                    <li>
+                        <a href="#">WEMAN</a>
+                    </li>
+                    <li>
+                        <a href="#">CUSTOM</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="text-contianer1 active-text-slide">
+                <div class="product-name">
+                  <h1>Rolex</h1>
+                </div>
+                <div class="footer">
+                    <div class="footer-heading">
+                        <h2>ROLEX___42mm</h2>
+                        <span>S</span>
+                        <span>M</span>
+                        <span>L</span>
+                    </div>
+                    <p class="simplicity" style="color: #949393;font-weight: bold;">SIMPLICITY</p>
+                    <p>In thiis video tutorial i am gonna show you ow to create a nixon website dsign using htm</p>
+                </div>
+            </div>
+            <!--text con2-->
+            <div class="text-contianer2">
+                <div class="product-name">
+                  <h1>Rollo</h1>
+                </div>
+                <div class="footer">
+                    <div class="footer-heading">
+                        <h2>ROLlo___32mm</h2>
+                        <span>S</span>
+                        <span>M</span>
+                        <span>L</span>
+                    </div>
+                    <p class="simplicity" style="color: #949393;font-weight: bold;">SIMPLICITY</p>
+                    <p>In thiis video tutorial i am gonna show you ow to create a nixon website dsign using htm</p>
+                </div>
+            </div>
+            <div class="social-links">
+                    <a href="" class="fb">Fb</a>
+                    <a href="" class="in">IN</a>
+                    <a href="" class="yu">YU</a>
+            </div>
+        </div>
+        <div class="slide-right">
+            <div class="img-menu">
+                <a href="" class="cart">
+                    <img src="images/basket-cart-icon-27.png "height="30px" alt="">
+                </a>
+                <a href="" class="login">LOGIN</a>
+            </div>
+            <!--img1-->
+            <div class="img-container1 active-img">
+                <div class="product-img">
+                    <img src="images/w3.png" alt="" height="400px">
+                    <div class="cart-op">
+                    <p class="price">$255.00</p>
+                    <a href="" class="add-btn">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            <!--img2-->
+            <div class="img-container2">
+                <div class="product-img">
+                    <img src="images/w4.png" alt="" height="400px">
+                    <div class="cart-op">
+                    <p class="price">$205.00</p>
+                    <a href="" class="add-btn">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#" class="first-btn active-btn">01</a>
+                <a href="#" class="second-btn">02</a>
+            </div>
+
+        </div>
+    </div>
+<script type="text/javascript" src="JQuery3.3.1.js"></script>
+<script type="text/javascript">
+$(document).on('click','.first-btn,.second-btn',function(){
+    $(this).addClass('active-btn').siblings().removeClass('active-btn')
+});
+$(document).on('click','.first-btn',function(){
+    $('.text-contianer1').addClass('active-text-slide').siblings('.text-contianer2').removeClass('active-text-slide')
+});
+$(document).on('click','.second-btn',function(){
+    $('.text-contianer2').addClass('active-text-slide').siblings('.text-contianer1').removeClass('active-text-slide')
+});
+//img
+$(document).on('click','.first-btn',function(){
+    $('.img-container1').addClass('active-img').siblings('.img-container2').removeClass('active-img')
+});
+$(document).on('click','.second-btn',function(){
+    $('.img-container2').addClass('active-img').siblings('.img-container1').removeClass('active-img')
+});
+
+
+</script>
+
+</body>
+</html>
